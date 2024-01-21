@@ -161,11 +161,10 @@ Aşağıdakileri yapmak için ismeGoreFiltrele işlevini kullanın:
 */
 
 function ismeGoreFiltrele(arr, lezzet) {
+  let özelListe = [];
   for (let i = 0; i < arr.length; i++) {
-    let özelListe = [];
-
     if (arr[i].includes(lezzet)) {
-      özelListe.unshift(arr[i]);
+      özelListe.push(arr[i]);
     }
   }
   return özelListe;
